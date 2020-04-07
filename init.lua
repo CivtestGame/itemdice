@@ -48,7 +48,7 @@ for i = 6,1,-1 do
       -- itemdice:big_d6_2 has the number two as the texture etc
       tiles = {"itemdice_" .. i .. ".png"},
       is_ground_content = true,
-      groups = {cracky=1},
+      groups = {choppy = 2},
       on_rightclick = function(pos, node, player, itemstack, pointed_thing)
          play_dice_sound(player:get_pos())
          -- Randomly chooses between the six nodes, result being the texture
